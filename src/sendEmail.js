@@ -33,7 +33,6 @@ export const sendEmail = (suitableTimes) => {
         to: EMAIL_ADDRESS,
         subject: 'Time Available in Six By Nico ',
         html: `Here are potentially suitable times:${htmlForTimesList}`
-        // text: '<h1>Welcome</h1><p>That was easy!</p>'
     };
 
     transporter.sendMail(mailOptions, function(error, info){

@@ -2,9 +2,9 @@
   "name": "checksixbynicoavailability",
   "version": "1.0.0",
   "description": "script to check if any availability in Six By Nico for a certain time range",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node -r dotenv-safe/config index.js",
+    "start": "node -r dotenv-safe/config src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",

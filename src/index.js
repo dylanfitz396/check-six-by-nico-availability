@@ -15,7 +15,7 @@ const checkAvailability = async () => {
   const suitableTimes = availability.filter(({ TimeSlot }) => {
     const date = new Date(TimeSlot)
     const hour = date.getHours()
-    return (hour >= 17) && (hour < 22)
+    return (hour >= 12) && (hour < 22)
   })
   if (suitableTimes.length > 0) {
     sendEmail(suitableTimes);
@@ -29,4 +29,4 @@ const intervalId = setInterval(() => {
     } else {
         checkAvailability();
     }
-}, 5000)
+}, 60000)
