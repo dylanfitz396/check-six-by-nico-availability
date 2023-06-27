@@ -1,0 +1,24 @@
+{
+  "name": "checksixbynicoavailability",
+  "version": "1.0.0",
+  "description": "script to check if any availability in Six By Nico for a certain time range",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv-safe/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "node-fetch": "^3.3.1",
+    "nodemailer": "^6.9.3"
+  }
+}
