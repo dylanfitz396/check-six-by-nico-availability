@@ -1,7 +1,6 @@
 import nodemailer from 'nodemailer';
 
-const EMAIL_ADDRESS = '***REMOVED***'
-const { PASSWORD } = process.env;
+const { PASSWORD, EMAIL_ADDRESS } = process.env;
 
 const convertToHumanReadableTimes = (suitableTimes) => suitableTimes.map(({ TimeSlot }) => {
     const date = new Date(TimeSlot)
